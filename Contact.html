@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolued</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/6c9832c782.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <section class="sub-header">
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="/Assets/red-graduation-cap-removebg-preview.png">
+            <h1 style="color: white;">Rolued</h1>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Course.html">COURSE</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+
+                
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+ 
+    <h1>Contact Us</h1>
+
+   </section>
+
+
+    <!----------contact us page ----------->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126813.25649285394!2d3.2043987499999997!3d6.657547699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9903ef9912d7%3A0x4f1a317e5c3e4b00!2sOta%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1703773890860!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+
+        <div class="container">
+            <div class="contact-col">
+                <i class="fa fa-home" ></i>
+                <span>
+                    <h5>Plot 1, Pegamut Way, Behind Industrial Housing Estate.</h5>
+                    <p> Ota, Ogun State, Nigeria.</p>
+                </span>
+            </div>
+
+            <div class="contact-col">
+                <i class="fa fa-phone" ></i>
+                <span>
+                    <h5>+2348080910750</h5>
+                    <p> Monday To Saturday, 9AM - 6PM</p>
+                </span>
+            </div>
+            <div class="contact-col">
+                <i class="fa fa-envelope-o" ></i>
+                <span>
+                    <h5>olajideadedoyinrodiyat@gmail.com</h5>
+                    <p>Email Us Your Query</p>
+                </span>
+           </div>
+ <div class="contact-col">
+     <form action="form hndler.php" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name" required>
+        <input type="email" name="email" placeholder="Enter Your Email" required>
+        <input type="text"name="subject" placeholder="Enter Your Subject" required>
+        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn"> Send Message </button>
+    </form>
+
+
+</div>
+ </div>
+
+    </section>
+ 
+  
+
+   <!--------Footer--------->
+
+   <section class="footer">
+    <h4>About Us </h4>
+    <p>We encourage students to question ideas and assumption
+     and then conduct research to find an alternative answer or solution. <br>
+     Many graduate from our university have heavy research components,
+     and opportunities to contribute to or conduct research which is common for undergraduates as well. </p>
+ 
+     <div class="icons">
+        <a target="_blank" title="Visit Us On Facebook" href="https://www.facebook.com/lite/profile.php?id=100084471879430&mibextid=FqQbvRVe40gbju2b">
+            <i class="fa fa-facebook" ></i>
+        </a>
+        <a target="_blank" title="Join Us On X" href="https://x.com/AdedoyinRodiyat?t=8wj3SoxdRMWDfrpxxXpcvA&s=08 ">
+            <i class="fa fa-x" ></i>
+        </a>
+        <a target="_blank" title="Visit Us On Instagram" href="https://www.instagram.com/adedoyin_13?igsh=MWNvbm1veTUyNHl2bQ==">
+            <i class="fa fa-instagram" ></i>
+        </a>
+        <a target="_blank" title="Visit Us On Linkedin" href="https://www.linkedin.com/login">
+            <i class="fa fa-linkedin" ></i>
+        </a>
+        <a target="_blank" title="Visit Us On Youtube" href="http://www.youtube.com/elfrKBsYNvgBwCkSnMnvzQ">
+            <i class="fa fa-youtube" ></i>
+        </a>
+    </div> 
+
+    <p>Created With <i class="fa fa-heart-o" ></i> By Dev Adedoyin - Rolued's Software Developer </p>
+   </section>
+
+   <!--------JavaScript for Toggle Menu-------->
+   <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.display = "block";
+    }
+    function hideMenu(){
+        navLinks.style.display = "none";
+    }
+
+   </script>
+    
+</body>
+</html>
